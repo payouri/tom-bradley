@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>TOM BRADER</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            max-width: 1600px;
+            margin: auto;
+        }
+    </style>
+    <div class="contenu">
+
+        <h1>Tom Brader</h1>
+
+        <p class="descriptif">
+
+            Tom Brader, le célèbre explorateur de tombeaux sacrés se retrouve pris au piège de la brume.
+            En passant votre souris, aidez le à découvrir le chemin!
+            
+        </p>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+                <rect width="100%" height="100%" fill="transparent"/>
+                <image xmlns:xlink= "http://www.w3.org/1999/xlink" xlink:href="./pages/Tom_Bradley-Back_1600px.jpg" width="100%" height="100%" />
+            </svg>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+                <defs>
+                    <mask id="mask" x="0" y="0" width="100%" height="100%">
+                    <circle id="mask-circle" cx="50%" cy="50%" r="5%" style="fill: url(#grad1); stroke: rgba(0, 0, 0, 1); stroke-width: 1;"/>
+                    </mask>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:rgb(255, 255, 255); stop-opacity:1" />
+                        <stop offset="25%" style="stop-color:rgb(255, 255, 255); stop-opacity:.7" />
+                        <stop offset="66%" style="stop-color:rgb(255, 255, 255); stop-opacity:.2" />
+                        <stop offset="100%" style="stop-color: rgb(255, 255, 255); stop-opacity:0" />
+                    </radialGradient>
+                </defs>
+                <g style="mask: url(#mask)">
+                    <image xmlns:xlink= "http://www.w3.org/1999/xlink" xlink:href="./pages/Tom_Bradley-Front_1600px.jpg" width="100%" height="100%" />
+                </g>
+                <circle id="circle-shadow" cx="50%" cy="50%" r="5%" style="fill: transparent;" />
+            </svg>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
